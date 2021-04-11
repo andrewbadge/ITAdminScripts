@@ -13,5 +13,9 @@
 
 
 function Add-Quickassist {
-    Add-WindowsCapability -online -name App.Support.QuickAssist~~~~0.0.1.0
+    try {
+        Add-WindowsCapability -online -name App.Support.QuickAssist~~~~0.0.1.0
+    } catch {
+        Write-Host "Fatal Exception:[$_.Exception.Message]"
+    }
 }

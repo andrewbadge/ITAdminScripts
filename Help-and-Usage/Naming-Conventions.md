@@ -18,6 +18,8 @@ This is not an exhaustive list. Mostly these are examples; Follow what is used a
 * Remove : clears or removes a setting
 * Disable: Turn off or Disable a setting
 
+See (https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/approved-verbs-for-windows-powershell-commands?view=powershell-7.1)
+
 ## Objects or Services
 
 * O365 : Office 365 Services (Mail, Planner, Teams) 
