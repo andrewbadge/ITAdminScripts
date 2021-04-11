@@ -25,3 +25,7 @@ See the [Synopsis template here](https://github.com/andrewbadge/ITAdminScripts/b
 **Naming**
 
 See [Naming Conventions](https://github.com/andrewbadge/ITAdminScripts/blob/main/Help-and-Usage/Naming-Conventions.md)
+
+## Usage
+
+[Using Scripts in ConnectWise Automate](https://github.com/andrewbadge/ITAdminScripts/blob/main/Help-and-Usage/Using-Scripts-in-CWAutomate.md)
