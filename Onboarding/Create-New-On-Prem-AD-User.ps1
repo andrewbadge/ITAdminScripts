@@ -1,5 +1,7 @@
 <#
 .SYNOPSIS
+    Not production Ready. Need Parameters
+
     This script will create a new AD User account when run on a DC. 
 .DESCRIPTION
     A detailed description of the function or script. This keyword can be
@@ -21,7 +23,6 @@
 
 #Variables for New user 
 #Variables that Contain "<>" Need to be defined for the script to run.
-
 $GivenName = "@GivenName@"
 $Surname = "@Surname@"
 $Company = "@Company@"
@@ -32,8 +33,6 @@ $Title = "@Title@"
 $Domain = "@Domain@"
 
 #Automatically generated variables
-
-
 $FullName = "$GivenName $Surname"
 $SamAccountName = "$GivenName.$Surname"
 $UserPrincipleName = "$GivenName.$Surname$Domain"
@@ -42,12 +41,12 @@ $AccountPassword = "Welcometo$Company123!"
 
 
 function New-User {
-      try {
-          New-ADUser -Name $FullName -GivenName $GivenName -Surname $Surname -SamAccountName $SamAccountName `
+    try {
+        New-ADUser -Name $FullName -GivenName $GivenName -Surname $Surname -SamAccountName $SamAccountName `
           -UserPrincipalName $UserPrincipleName -Path $Path -AccountPassword $AccountPassword -Department $Department -Title $Title `
           -Enabled $true
-                   }
-        catch {
+    }
+    catch {
         Write-Host "Fatal Exception:[$_.Exception.Message]"
-                 }
-                }
+    }
+}

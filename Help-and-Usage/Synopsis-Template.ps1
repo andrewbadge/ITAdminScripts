@@ -17,5 +17,5 @@
     Usage: xxxx
 .LINK
     Docmentation or related Control Template
-    https://exigence.itglue.com/DOCUMENTEXAMPLE
+    https://docUrl.com
 #>

@@ -15,7 +15,7 @@
     Author         : Andrew Badge
     Prerequisite   : PowerShell 5.1 
 .EXAMPLE
-    CheckForOtherAdmins "eximsp-ABCDEF"
+    CheckForOtherAdmins "myAdminToExclude"
 .LINK
 #>
 

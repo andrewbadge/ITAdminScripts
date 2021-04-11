@@ -20,8 +20,8 @@ Windows Command (.bat) files are also acceptible.
 
 **All Code should include a Synopsis block**
 
-See the [Synopsis template here](https://github.com/andrewbadge/ExigenceScripts/blob/main/Help-and-Usage/Synopsis-Template.ps1)
+See the [Synopsis template here](https://github.com/andrewbadge/ITAdminScripts/blob/main/Help-and-Usage/Synopsis-Template.ps1)
 
 **Naming**
 
-See [Naming Conventions](https://github.com/andrewbadge/ExigenceScripts/blob/main/Help-and-Usage/Naming-Conventions.md)
+See [Naming Conventions](https://github.com/andrewbadge/ITAdminScripts/blob/main/Help-and-Usage/Naming-Conventions.md)

@@ -9,7 +9,7 @@
 #    Author         : Andrew Badge
 #    Prerequisite   : pcregrep: use "sudo apt install pcregrep" to install
 #EXAMPLE 
-#   Get-URLs "https://www.exigence.com.au"
+#   Get-URLs "https://www.andrewbadge.com"
 #
 
 Get-URLs()

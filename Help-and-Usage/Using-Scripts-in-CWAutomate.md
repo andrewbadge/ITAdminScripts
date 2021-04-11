@@ -1,11 +1,11 @@
 # Using scripts in ConnectWise Automate
 
 ## You need an access token
-See the [ITGlue doc](https://exigence.itglue.com/1025747/docs/6909008) on how to get a token. This also links to the current read-only token generated for Automate.
+Generate a Personal Acess Token from your Develper Account settings in GitHub.
+NB: Ideally this should be from a service account with read only access to the repository (not your user account with write access)
 
 ## Running PowerShell scripts
 
-See [!EXIMSP Github Example Script] for an example. 
 Add two commands to your Automate script:
 
 1. Execute Powershell
@@ -15,7 +15,7 @@ Add two commands to your Automate script:
         $wc = New-Object System.Net.WebClient
         $wc.Headers.Add('Authorization','token REPLACEWITHPERSONALTOKEN')
         $wc.Headers.Add('Accept','application/vnd.github.v3.raw')
-        $wc.DownloadString('https://raw.githubusercontent.com/ExigenceIT/ExigenceScripts/main/REPLACEFOLDER/REPLACESCRIPTNAME.ps1') | iex
+        $wc.DownloadString('https://raw.githubusercontent.com/REPLACE/REPLACESCRIPTNAME.ps1') | iex
         FUNCTIONTOCALL PARAMETERS
     } catch {
         Write-Host "Fatal Exception:[$_.Exception.Message]"
@@ -26,7 +26,7 @@ Add two commands to your Automate script:
 
 3. Check for an Exception. Does the returned value contain "Fatal Exception:"?
 
-![CW Automate Script Block](https://github.com/ExigenceIT/ExigenceScripts/blob/main/Help-and-Usage/CWAutomateScriptExample.png?raw=true)
+![CW Automate Script Block](https://github.com//andrewbadge/ITAdminScripts/blob/main/Help-and-Usage/CWAutomateScriptExample.png?raw=true)
 
 
 ## Handling errors
