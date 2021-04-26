@@ -1,3 +1,20 @@
+<#
+.SYNOPSIS
+   Disables FastBoot so Windows 10 really shuts down. 
+.DESCRIPTION
+   Avoid issues related to not really restarting.
+.NOTES
+    File Name      : Disable-Windows-FastBoot.ps1
+    Author         : Andrew Badge
+    Prerequisite   : Powershell 5.1
+.EXAMPLE 
+    Disable-Windows-FastBoot
+#>
 
-
-REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f
+function Disable-Windows-FastBoots {
+    try {
+	    REG ADD "HKEY_LOCAL_MACHINE\SYSTEM\CurrentControlSet\Control\Session Manager\Power" /v HiberbootEnabled /t REG_DWORD /d "0" /f
+	} catch {
+        Write-Host "Fatal Exception:[$_.Exception.Message]"
+    }
+}
