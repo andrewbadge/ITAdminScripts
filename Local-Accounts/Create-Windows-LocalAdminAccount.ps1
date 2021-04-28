@@ -31,27 +31,18 @@ function Create-NewLocalAdmin {
         [securestring] $Password
     )    
 
-    $ObjLocalUser = $null
-	try {
-		Write-Verbose "Searching for $($Username) in LocalUser DataBase"
-		$ObjLocalUser = Get-LocalUser $Username
-		Write-Verbose "User $($Username) was found"
-	}
-	catch [Microsoft.PowerShell.Commands.UserNotFoundException] {
-		"User $($USERNAME) was not found"
-	}
-	catch {
-		Write-Host "Fatal Exception:[$_.Exception.Message]"
-	}
-	
     try {
-		If (!$ObjLocalUser) {
+        $op = Get-LocalUser | Where-Object {$_.Name -eq "$Username"}
+        if ( -not $op) {
 			New-LocalUser "$Username" -Password $Password -FullName "$Username" -Description $Description 
 			Set-LocalUser -Name "$Username" -UserMayChangePassword $false -PasswordNeverExpires $true 
-			Write-Verbose "$Username local user created"
+			Write-Host "$Username local user created"
 			Add-LocalGroupMember -Group "Administrators" -Member "$Username"
-			Write-Verbose "$Username added to the local administrator group"
+			Write-Host "$Username added to the local administrator group"
 		}
+        else {
+            Write-Host "$Username already exists"
+        }
     } catch {
         Write-Host "Fatal Exception:[$_.Exception.Message]"
     }
