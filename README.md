@@ -42,4 +42,6 @@ Use the scripts, copy them, change them. If you've got some suggestions please l
 
 This started as a private repo for my own use with code from my own snippets and previous jobs. I'm sure 50% of this code has been copied from StackExchange or GitHub then rehashed.
 
+Thanks to James Maclean for one script! Send me more James.
+
 If there is something not correctly atrributed then please let me know and I'll fix it.
