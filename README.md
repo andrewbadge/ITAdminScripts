@@ -1,14 +1,16 @@
 # ITAdminScripts
-Scripts for IT Admins for standalone use or from within RMM or other management tools such as ConnectWise Automate or NinjaRMM
+Scripts for IT Admins for standalone use or from within RMM or other management tools such as Intune, ConnectWise Automate or NinjaRMM.
 
-## Contributor Rules
+In general these scripts are Windows focussed hence mostly Powershell.
+
+## Repo Rules (for myself)
 
 **No secrets in the repository**
 No passwords, keys, secrets of any sort. Nothing should be sensitive.
 Use parameters instead!
 
-**No client information**
-Try not to use client names, or specific detail related to clients in scripts.
+**No PC, client or user information**
+Try not to use PC names, client names, or specific detail related to clients or users in scripts.
 Make the usage generic or use parameters if possible! 
 
 ## Code and Content
@@ -29,3 +31,13 @@ See [Naming Conventions](https://github.com/andrewbadge/ITAdminScripts/blob/main
 ## Usage
 
 [Using Scripts in ConnectWise Automate](https://github.com/andrewbadge/ITAdminScripts/blob/main/Help-and-Usage/Using-Scripts-in-CWAutomate.md)
+
+# Licensing
+
+Use the scripts, copy them, change them. If you've got some suggestions please let me know.
+
+# Thanks
+
+This started as a private repo for my own use with code from my own snippets and previous jobs. I'm sure 50% of this code has been copied from StackExchange or GitHub then rehashed.
+
+If there is something not correctly atrributed then please let me know and I'll fix it.
