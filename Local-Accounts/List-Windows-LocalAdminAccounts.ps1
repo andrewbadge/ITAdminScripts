@@ -37,7 +37,7 @@ function CheckForOtherAdmins {
                 {
                     if ($localadmin.Enabled -eq $true)
                     {   
-                        #Skip the Exigence Local Admin
+                        #Skip the defined Local Admin
                         if ($member -ne $AdminToIgnore)
                         {
                             #Skip the Essentials Server Built in Admin 
