@@ -40,7 +40,7 @@ Use the scripts, copy them, change them. If you've got some suggestions please l
 
 # Thanks
 
-This started as a private repo for my own use with code from my own snippets and previous jobs. I'm sure 50% of this code has been copied from StackExchange or GitHub then rehashed.
+This started as a private repo for my own use with code from my own snippets and previous jobs. I'm sure 50% of this code has been copied from StackExchange or GitHub then rehashed. Thanks to everyone who continue to share.
 
 Thanks to James Maclean for at least one script and previous help! Send me more James.
 
