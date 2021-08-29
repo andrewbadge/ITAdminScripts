@@ -1,4 +1,4 @@
-# ITAdminScripts
+# IT Admin Scripts
 Scripts for IT Admins for standalone use or from within RMM or other management tools such as Intune, ConnectWise Automate or NinjaRMM.
 
 In general these scripts are Windows focussed hence mostly Powershell.
