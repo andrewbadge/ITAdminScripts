@@ -1,6 +1,6 @@
 # Naming Conventions
 
-This is not an exhaustive list. Mostly these are examples; Follow what is used already. If you have further examples please add them to this document.
+This is not an exhaustive list. Mostly these are examples; Follow what is used already. If you have further examples please lert me know.
 
 ## Quick Start
 
@@ -33,4 +33,4 @@ See (https://docs.microsoft.com/en-us/powershell/scripting/developer/cmdlet/appr
 
 Short description of the action the script does.
 
-e.g. UnwantedApps, SMB1, PasswordSavingIn
+e.g. UnwantedApps, SMB1
