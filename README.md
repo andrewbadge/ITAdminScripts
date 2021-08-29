@@ -3,6 +3,8 @@ Scripts for IT Admins for standalone use or from within RMM or other management 
 
 In general these scripts are Windows focussed hence mostly Powershell.
 
+If you find this useful and would like me to continue working on it please [![Buy Me a Coffee](https://github.com/andrewbadge/DNSRoaming/blob/main/Images/BuyMeACoffee.png)](https://www.buymeacoffee.com/AndrewBadge)
+
 ## Repo Rules (for myself)
 
 **No secrets in the repository**
