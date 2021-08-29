@@ -55,8 +55,8 @@ function CheckForOtherAdmins {
                 {
                     if ($member.EndsWith("`\Domain Admins") -eq $false)
                     {
-                        #Skip the Exigence Local Admin Group
-                        if ($member -ne "OMNI`\Desktop Local Admin")
+                        #Skip the Local Admin Group (assuming there is one
+                        if ($member.EndsWith("`\Desktop Local Admins") -eq $false)
                         {
                             $localadmins += $member + " (AD or AAD)"
                         }
