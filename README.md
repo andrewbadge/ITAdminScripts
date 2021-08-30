@@ -36,7 +36,7 @@ See [Naming Conventions](https://github.com/andrewbadge/ITAdminScripts/blob/main
 
 # Licensing
 
-Use the scripts, copy them, change them. If you've got some suggestions please let me know.
+See [License](https://github.com/andrewbadge/ITAdminScripts/blob/main/LICENSE)
 
 # Thanks
 
